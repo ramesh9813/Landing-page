@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+:root{
+    --head-background-color: #3D4D6A;
+    --font-color:#47B2E4;
+    --side-margin:10px 100px;
+}
+
+.head-item{
+    padding: 15px 0;
+    height: 40px;
+}
+.head-item h2 a{
+    color: white;
+    text-decoration: none;
+    word-spacing: 5px;
+}
+
+/* nav bar editing */
+.nav-item .first-ul{
+    display: flex;
+    list-style: none; 
+    gap: 30px;
+}
+
+
+.nav-item .first-ul .first-li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+ 
+.nav-item .first-ul .first-li:hover a{
+    color: var(--font-color);
+}
+
+.head-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--head-background-color);
+}
+.nav-item .first-ul .first-li .fa-solid{
+    color: white;
+    font-size: 14px;
+}
+.nav-item .first-ul .first-li:hover .fa-solid{
+    color: var(--font-color);
+}
+
+/* getstarted buttom styling */
+#get-started{
+    border: 2px solid var(--font-color);
+    padding: 6px 15px;
+
+    border-radius: 20px;
+}
+#get-started:hover {
+    background-color: var(--font-color);
+    color: white;
+}
+
+/* To edit the dropdown item */
+
+.first-drop-list {
+    list-style: none;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 40px; /* Adjusted top position */
+    display: none;
+    border-radius: 4px;
+    z-index: 1;
+    transition: 1s;
+}
+
+.first-drop-list .second-li{
+    padding:10px 50px 10px 10px;
+}
+
+.first-li:hover .first-drop-list,.first-drop-list:hover {
+    display: block;
+}
+
+.first-drop-list li .fa-solid{
+    margin-left: 10px;
+}
+
+.first-drop-list li a:hover{
+    color:black
+}
+
+/* thrird dropdown editing */
+
+.second-drop-list {
+    list-style: none;
+    color: black;
+    width: 180px;
+    background-color: white;
+    position: absolute;
+    left: 180px; /* Adjusted top position */
+    display: none;
+    border-radius: 4px;
+    transition: 1s;
+    box-shadow: 1px 1px 10px 1px rgb(191, 190, 190);
+}
+
+.second-drop-list .third-li{
+    padding:10px 50px 10px 10px;
+}
+.second-li:hover .second-drop-list,.second-drop-list:hover {
+    display: block;
+}
+
+ 
+/* main body design */
+.flex-container{
+   background-color:#37517E;
+    display: flex;
+    height: 70vh;
+}
+.flex-item img{
+    height: 400px;
+}
+.left{
+    padding: 20px ;
+    padding-left: 120px;
+}
+
+.flex-container h1{
+    margin-top: 60px;
+    font-size: 70px;
+    line-height: 60px;
+    color: white;
+}
+
+.flex-container h3{
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #AFB9CB;
+    word-spacing: 4px;
+}
+.flex-container .first-flex {
+    /* margin: 20px 60px 0 auto; */
+    margin-top: 50px;
+    font-size: 20px;
+}
+.flex-container .first-flex a{
+    text-decoration: none;
+    color: white;
+}
+
+/* the butom styling  */
+.get-started{
+    background-color: var(--font-color);
+    padding: 12px 30px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.get-started:hover{
+    /* background-color: #47b2e4; */
+    background-color: #3f9dc8;
+    transition: 0.5s;
+}
+.watch-video .fa-regular{
+    margin-right: 10px;
+    font-size: 30px;
+    position: relative;
+    top:5px
+}
+.watch-video:hover .fa-regular{
+    color: #3f9dc8;
+    transition: 0.5s;
+
+}
+
+/* the function like image up and down  */
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.item img {
+    margin-top: 20px;
+    margin-right: 20px;
+    animation: moveUpDown 5s infinite;
+}
+
+
+/* second row styling */
+.secod-row .company-name-container{
+    padding: 0px 20px;
+    height: 15vh;
+    background-color: #F3F5FA;
+}
+
+.company-name-container img{
+    height: 5vh;
+    margin-top: 2.5%;
+    padding: 0px 4vw;
+    filter: grayscale(100%);
+    transition:ease-in-out 1s ;
+}
+
+.company-name-container img:hover{
+    height: 5vh;
+    margin-top: 2.5%;
+    padding: 0px 4vw;
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+
+
+ 
+/* ask question how to make the thing to hover out smoothly */
+
+
+/* third section styling */
+.third-section .about-us{
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+     
+}
+
+.about-us{
+    /* margin: 0 10vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-us .about-head h1{
+    font-size: 2.2rem;
+    color: #37517E;
+    /* margin-bottom: 0vh; */
+}
+
+/* inner flex design second flex */
+.aboutus-container div ul{
+    list-style: none;
+}
+
+.aboutus-container{
+    display: flex;
+    margin: var(--side-margin);
+}
+
+.aboutus-container .aboutus-left{
+    flex:2.5;
+    line-height:30px;
+}
+.aboutus-container .aboutus-right{
+    flex:2;
+    margin-left:20px;
+    line-height:30px;
+}
+.aboutus-left ul li,p{
+    margin-top:15px ;
+}
+
+/* styling the learn more  */
+#learn-more a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 1.2rem;
+}
+#learn-more{
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 140px;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+}
+
+#learn-more:hover a{
+    color:white;  
+}
+
+#learn-more:hover{
+    background-color: var(--font-color);
+}
+
+
+/* fourth section styling */
+.fourth-section{
+    background-color: #F3F5FA;
+}
+
+.fourth-container{
+    padding-top: 120px;
+    display: flex;
+    margin: var(--side-margin);
+    height: 90vh;
+    
+}
+.fourth-left h3{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #37517e;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.fourth-left p{
+    line-height: 25px;
+    font-size: 15px;
+    color: #848484;
+    margin-bottom: 1rem;
+}
+.fourth-left-h2{
+    font-family: 'Arial Black', 'Arial', sans-serif;
+}
+
+.fourth-right img{
+    height: 60vh;
+}
+
+
+/* togglecollapse */
+.toggle-input {
+    display: none;
+  }
+  
+  .question {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .toggle-input:checked + .question + .answer {
+    display: block;
+  }
+  
+
+  /* footer */
+  .contact-section{
+    height: 60vh;
+    font-family: "Jost", sans-serif;
+  }
+
+ .Contact-us{
+    color: #37517E;
+    text-align: center;
+    font-size: 2.2rem;
+    }
+  footer{
+    background-color: #F3F5FA;
+  }
+
+  .form label, .form input, .Contact-us {
+    margin-left: 100px;
+    display: block;
+    width: 85%;  
+    /* box-sizing: border-box;   */
+    margin-bottom: 10px;  
+    font-family: "Jost", sans-serif;
+}
+.form input{
+    /* height:25px ; */
+    font-size: 1.1rem;
+    padding: 8px;
+    font-family: "Jost", sans-serif;
+}
+.form .message{
+    font-size: 1.1rem;
+    height: 70px;
+    margin-left: 100px;
+    width: 85%;
+    padding: 8px;
+    font-family: "Jost", sans-serif;
+    min-width: 85%;
+    max-width: 85%;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+.form .submit{
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 140px;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    font-family: "Jost", sans-serif;
+}
+
+.form .submit:hover{
+    background-color: var(--font-color);
+    color: white;   
+}
+
+
+
+/* footer designing */
+.footer{
+    margin-left:100px ;
+}
+
+.row .col .first-col,.second-col{
+    margin-top: 20px;
+}
+.row {
+    margin: 0 auto 0   0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: auto;  
+    gap: 10px;  
+}
+
+/* .second-col{
+    padding: 30px 0 0 0;
+} */
+
+.col-third{
+    width: 90%;
+}
+  
